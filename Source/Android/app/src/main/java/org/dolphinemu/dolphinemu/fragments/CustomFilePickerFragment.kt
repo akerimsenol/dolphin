@@ -38,10 +38,10 @@ class CustomFilePickerFragment : FilePickerFragment() {
         extensions = requireArguments().serializable(KEY_EXTENSIONS) as HashSet<String>?
 
         if (mode == MODE_DIR) {
-            val ok = requireActivity().findViewById<TextView>(R.id.nnf_button_ok)
+            val ok = requireActivity().findViewById<TextView>(com.nononsenseapps.filepicker.R.id.nnf_button_ok)
             ok.setText(R.string.select_dir)
 
-            val cancel = requireActivity().findViewById<TextView>(R.id.nnf_button_cancel)
+            val cancel = requireActivity().findViewById<TextView>(com.nononsenseapps.filepicker.R.id.nnf_button_cancel)
             cancel.visibility = View.GONE
         }
     }

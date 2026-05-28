@@ -173,7 +173,7 @@ object ThemeHelper {
             if (-verticalOffset >= layout.totalScrollRange / 2) {
                 @ColorInt val color =
                     ElevationOverlayProvider(appBarLayout.context).compositeOverlay(
-                        MaterialColors.getColor(appBarLayout, R.attr.colorSurface),
+                        MaterialColors.getColor(appBarLayout, com.google.android.material.R.attr.colorSurface),
                         activity.resources.getDimensionPixelSize(R.dimen.elevated_app_bar).toFloat()
                     )
                 toolbar.setBackgroundColor(color)
@@ -183,7 +183,7 @@ object ThemeHelper {
                     activity.applicationContext,
                     android.R.color.transparent
                 )
-                @ColorInt val appBarColor = MaterialColors.getColor(toolbar, R.attr.colorSurface)
+                @ColorInt val appBarColor = MaterialColors.getColor(toolbar, com.google.android.material.R.attr.colorSurface)
                 toolbar.setBackgroundColor(appBarColor)
                 setStatusBarColor(activity, statusBarColor)
             }
@@ -194,7 +194,7 @@ object ThemeHelper {
     fun enableStatusBarScrollTint(activity: AppCompatActivity, appBarLayout: AppBarLayout) {
         appBarLayout.addOnOffsetChangedListener { _: AppBarLayout, verticalOffset: Int ->
             if (-verticalOffset > 0) {
-                @ColorInt val color = MaterialColors.getColor(appBarLayout, R.attr.colorSurface)
+                @ColorInt val color = MaterialColors.getColor(appBarLayout, com.google.android.material.R.attr.colorSurface)
                 setStatusBarColor(activity, color)
             } else {
                 @ColorInt val statusBarColor = ContextCompat.getColor(

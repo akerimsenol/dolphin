@@ -21,7 +21,7 @@ class HeaderHyperLinkViewHolder(
         super.bind(item)
         binding.textHeaderName.movementMethod = LinkMovementMethod.getInstance()
         binding.textHeaderName.setLinkTextColor(
-            MaterialColors.getColor(itemView, R.attr.colorTertiary)
+            MaterialColors.getColor(itemView, com.google.android.material.R.attr.colorTertiary)
         )
     }
 }

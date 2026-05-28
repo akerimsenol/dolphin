@@ -45,7 +45,7 @@ class SettingsDividerItemDecoration(context: Context) : ItemDecoration() {
     private val tempRect = Rect()
 
     init {
-        val attrs = context.obtainStyledAttributes(intArrayOf(R.attr.colorSurfaceVariant))
+        val attrs = context.obtainStyledAttributes(intArrayOf(com.google.android.material.R.attr.colorSurfaceVariant))
         val dividerColor =
             attrs.getColor(0, ContextCompat.getColor(context, R.color.dolphin_surfaceVariant))
         attrs.recycle()

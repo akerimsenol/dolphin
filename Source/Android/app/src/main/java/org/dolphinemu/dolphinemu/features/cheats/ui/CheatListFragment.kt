@@ -44,7 +44,7 @@ class CheatListFragment : Fragment() {
 
         @ColorInt val color =
             ElevationOverlayProvider(binding.cheatsWarning.context).compositeOverlay(
-                MaterialColors.getColor(binding.cheatsWarning, R.attr.colorSurface),
+                MaterialColors.getColor(binding.cheatsWarning, com.google.android.material.R.attr.colorSurface),
                 resources.getDimensionPixelSize(R.dimen.elevated_app_bar).toFloat()
             )
         binding.cheatsWarning.setBackgroundColor(color)

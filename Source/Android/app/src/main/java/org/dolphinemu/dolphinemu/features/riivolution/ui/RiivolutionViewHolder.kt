@@ -29,7 +29,7 @@ class RiivolutionViewHolder(itemView: View, private val binding: ListItemRiivolu
             binding.layoutChoice.hint = text
         } else if (item.mSectionIndex != -1) {
             // TODO: Use supported version of setTextAppearance when min requirement is API 23
-            binding.textName.setTextAppearance(context, R.style.TextAppearance_AppCompat_Medium)
+            binding.textName.setTextAppearance(context, androidx.appcompat.R.style.TextAppearance_AppCompat_Medium)
             binding.layoutChoice.visibility = View.GONE
             text = patches.getSectionName(item.mDiscIndex, item.mSectionIndex)
         } else {
@@ -43,7 +43,7 @@ class RiivolutionViewHolder(itemView: View, private val binding: ListItemRiivolu
             this.item = item
             val adapter = ArrayAdapter<String>(
                 context,
-                R.layout.support_simple_spinner_dropdown_item
+                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
             )
             val choiceCount = patches.getChoiceCount(
                 item.mDiscIndex,

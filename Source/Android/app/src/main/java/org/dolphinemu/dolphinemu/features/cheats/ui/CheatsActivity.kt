@@ -96,7 +96,7 @@ class CheatsActivity : AppCompatActivity(), PanelSlideListener {
 
         @ColorInt val color =
             ElevationOverlayProvider(binding.toolbarCheats.context).compositeOverlay(
-                MaterialColors.getColor(binding.toolbarCheats, R.attr.colorSurface),
+                MaterialColors.getColor(binding.toolbarCheats, com.google.android.material.R.attr.colorSurface),
                 resources.getDimensionPixelSize(R.dimen.elevated_app_bar).toFloat()
             )
         binding.toolbarCheats.setBackgroundColor(color)

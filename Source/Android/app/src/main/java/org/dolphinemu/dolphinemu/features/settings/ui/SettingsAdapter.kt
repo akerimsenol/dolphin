@@ -287,7 +287,7 @@ class SettingsAdapter(
 
         val background = ContextCompat.getDrawable(context, R.drawable.dialog_round)
         @ColorInt val color = ElevationOverlayProvider(dialog.context).compositeOverlay(
-            MaterialColors.getColor(dialog.window!!.decorView, R.attr.colorSurface),
+            MaterialColors.getColor(dialog.window!!.decorView, com.google.android.material.R.attr.colorSurface),
             dialog.window!!.decorView.elevation
         )
         background!!.setColorFilter(color, PorterDuff.Mode.SRC_ATOP)
@@ -325,7 +325,7 @@ class SettingsAdapter(
 
         val background = ContextCompat.getDrawable(context, R.drawable.dialog_round)
         @ColorInt val color = ElevationOverlayProvider(dialog.context).compositeOverlay(
-            MaterialColors.getColor(dialog.window!!.decorView, R.attr.colorSurface),
+            MaterialColors.getColor(dialog.window!!.decorView, com.google.android.material.R.attr.colorSurface),
             dialog.window!!.decorView.elevation
         )
         background!!.setColorFilter(color, PorterDuff.Mode.SRC_ATOP)

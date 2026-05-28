@@ -189,7 +189,7 @@ class ConvertFragment : Fragment(), View.OnClickListener {
         val adapter = ArrayAdapter.createFromResource(
             requireContext(),
             entriesId,
-            R.layout.support_simple_spinner_dropdown_item
+            androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
         )
         dropdown.setAdapter(adapter)
 

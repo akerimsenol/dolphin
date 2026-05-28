@@ -59,7 +59,7 @@ class SkylanderSlotAdapter(
 
         binding.skylanderDropdown.setAdapter(
             ArrayAdapter(
-                activity, R.layout.support_simple_spinner_dropdown_item,
+                activity, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,
                 skylanderNames
             )
         )

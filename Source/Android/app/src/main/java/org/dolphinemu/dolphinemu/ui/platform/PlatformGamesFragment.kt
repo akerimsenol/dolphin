@@ -52,9 +52,9 @@ class PlatformGamesFragment : Fragment(), PlatformGamesView {
         // Set theme color to the refresh animation's background
         binding.swipeRefresh.apply {
             setProgressBackgroundColorSchemeColor(
-                MaterialColors.getColor(swipeRefresh!!, R.attr.colorPrimary)
+                MaterialColors.getColor(swipeRefresh!!, androidx.appcompat.R.attr.colorPrimary)
             )
-            setColorSchemeColors(MaterialColors.getColor(swipeRefresh!!, R.attr.colorOnPrimary))
+            setColorSchemeColors(MaterialColors.getColor(swipeRefresh!!, com.google.android.material.R.attr.colorOnPrimary))
             setOnRefreshListener(onRefreshListener)
         }
 

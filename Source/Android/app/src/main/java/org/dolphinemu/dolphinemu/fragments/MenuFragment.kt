@@ -43,7 +43,7 @@ class MenuFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         if (IntSetting.MAIN_INTERFACE_THEME.int != ThemeHelper.DEFAULT) {
             @ColorInt val color = ElevationOverlayProvider(view.context).compositeOverlay(
-                MaterialColors.getColor(view, R.attr.colorSurface),
+                MaterialColors.getColor(view, com.google.android.material.R.attr.colorSurface),
                 view.elevation
             )
             view.setBackgroundColor(color)
